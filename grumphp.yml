@@ -1,0 +1,2 @@
+imports:
+  - { resource: vendor/tool-shed/coding-conventions/grumphp.yml }

@@ -1,0 +1,37 @@
+{
+  "name": "tool-shed/library-template",
+  "description": "A library project template",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tool Shed",
+      "email": "opensource@toolshed.be"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "bin-dir": "bin",
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "ToolShed\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "ToolShed\\": "tests/"
+  },
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "tool-shed/coding-conventions": "^0.2"
+  }
+}
